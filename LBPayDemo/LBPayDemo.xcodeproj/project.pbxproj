@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08F8347B7CC0852C5B4DD2F2 /* Pods_LBPayDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832E3D1A7EB8B2C78B13A8B8 /* Pods_LBPayDemo.framework */; };
 		D1D899672645100200BCA8B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D899662645100200BCA8B8 /* AppDelegate.m */; };
 		D1D8996D2645100200BCA8B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D8996C2645100200BCA8B8 /* ViewController.m */; };
 		D1D899702645100200BCA8B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1D8996E2645100200BCA8B8 /* Main.storyboard */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6456CE39754314B0D969F7F4 /* Pods-LBPayDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBPayDemo.debug.xcconfig"; path = "Target Support Files/Pods-LBPayDemo/Pods-LBPayDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		67A80A3818A5A1C652DBDD6E /* Pods-LBPayDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBPayDemo.release.xcconfig"; path = "Target Support Files/Pods-LBPayDemo/Pods-LBPayDemo.release.xcconfig"; sourceTree = "<group>"; };
+		832E3D1A7EB8B2C78B13A8B8 /* Pods_LBPayDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBPayDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D899622645100200BCA8B8 /* LBPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D899652645100200BCA8B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D1D899662645100200BCA8B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +30,7 @@
 		D1D899742645100400BCA8B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1D899762645100400BCA8B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1D899772645100400BCA8B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1D8997E264535EB00BCA8B8 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08F8347B7CC0852C5B4DD2F2 /* Pods_LBPayDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7981B71596DF0B17DDEF6F9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6456CE39754314B0D969F7F4 /* Pods-LBPayDemo.debug.xcconfig */,
+				67A80A3818A5A1C652DBDD6E /* Pods-LBPayDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ABF1A763A5ECC40C85A11233 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				832E3D1A7EB8B2C78B13A8B8 /* Pods_LBPayDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1D899592645100200BCA8B8 = {
 			isa = PBXGroup;
 			children = (
 				D1D899642645100200BCA8B8 /* LBPayDemo */,
 				D1D899632645100200BCA8B8 /* Products */,
+				7981B71596DF0B17DDEF6F9B /* Pods */,
+				ABF1A763A5ECC40C85A11233 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +87,7 @@
 				D1D899662645100200BCA8B8 /* AppDelegate.m */,
 				D1D8996B2645100200BCA8B8 /* ViewController.h */,
 				D1D8996C2645100200BCA8B8 /* ViewController.m */,
+				D1D8997E264535EB00BCA8B8 /* PrefixHeader.pch */,
 				D1D8996E2645100200BCA8B8 /* Main.storyboard */,
 				D1D899712645100400BCA8B8 /* Assets.xcassets */,
 				D1D899732645100400BCA8B8 /* LaunchScreen.storyboard */,
@@ -78,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1D8997B2645100400BCA8B8 /* Build configuration list for PBXNativeTarget "LBPayDemo" */;
 			buildPhases = (
+				D73B145364A599BA12297F59 /* [CP] Check Pods Manifest.lock */,
 				D1D8995E2645100200BCA8B8 /* Sources */,
 				D1D8995F2645100200BCA8B8 /* Frameworks */,
 				D1D899602645100200BCA8B8 /* Resources */,
+				DF7976D20D529C263D532319 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D73B145364A599BA12297F59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LBPayDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF7976D20D529C263D532319 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LBPayDemo/Pods-LBPayDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LBPayDemo/Pods-LBPayDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LBPayDemo/Pods-LBPayDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1D8995E2645100200BCA8B8 /* Sources */ = {
@@ -282,10 +352,14 @@
 		};
 		D1D8997C2645100400BCA8B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6456CE39754314B0D969F7F4 /* Pods-LBPayDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/LBPayDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = LBPayDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -300,10 +374,14 @@
 		};
 		D1D8997D2645100400BCA8B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67A80A3818A5A1C652DBDD6E /* Pods-LBPayDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/LBPayDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = LBPayDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

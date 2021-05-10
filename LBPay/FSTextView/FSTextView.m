@@ -149,8 +149,8 @@ CGFloat const kFSTextViewPlaceholderHorizontalMargin = 5.0; ///< placeholderæ°´å
     self.wordsNumLabel.textColor = _placeholderColor;
     [self addSubview:self.wordsNumLabel];
     [self.wordsNumLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.mas_equalTo(self.mj_h - kFSTextViewPlaceholderVerticalMargin * 3);
-        make.left.mas_equalTo(self.mj_w - kFSTextViewPlaceholderHorizontalMargin);
+        make.top.mas_equalTo(self.height - kFSTextViewPlaceholderVerticalMargin * 3);
+        make.left.mas_equalTo(self.width - kFSTextViewPlaceholderHorizontalMargin);
     }];
 }
 
